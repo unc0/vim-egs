@@ -1,0 +1,14 @@
+<%= title %>
+==========
+
+1. <%= obj.foo %>
+
+2. <%= arr[1 + 1 / 2] %>
+
+    // File: <%= sourcecode[1].name %>
+    // Copyright: John
+    <% for i in sourcecode[1].code: %>
+    <%= i %>
+    <% end %>
+
+<!-- egs_subtype=markdown -->

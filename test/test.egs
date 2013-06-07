@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <% block header %>
+    <% block content %>
+    <footer>
+      <% block footer: %>
+        <ul>
+          <%-- This is a template comment that will not be rendered --%>
+          <% for item in footer-items: %>
+            <li><a href="<%= item.url %>"><%= item.name %></a></li>
+          <% else: %>
+            <li>-</li>
+          <% end %>
+        </ul>
+      <% end %>
+    </footer>
+    <%-- the <%@ and @%> coming up mean to treat the internals as literal, no template magic. --%>
+    <script id="egs-hello" type="text/egs-template"><%@
+    Hello, <%= name %=>
+    @%></script>
+  </body>
+</html>
