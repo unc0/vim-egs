@@ -50,6 +50,8 @@ directory and updates are just a `git pull` away.
 
 [vim-egs] uses subtype to highlight the targeting filetype's code.
 
+[vim-egs]: https://github.com/unc0/vim-egs
+
 You may specify the subtype in two way:
 
 1. Using special annotation in first 5 lines or the last line in your egs file.
